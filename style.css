@@ -3,26 +3,29 @@ body {
 }
 #header {
     background-color: dimgray;
-}
-#header {
     border-bottom: 0.5rem solid lightsalmon;
 }
+
 h1 {
     font-size: 1.5rem;
     color: white;
 }
+
 #title {
     height: 27.5rem;
     background-color: lightgray;
     text-align: center;
 }
+
 * {
     margin: 0;
 }
+
 #about {
     display: flex;
     height: 21.5rem;
 }
+
 h3 {
     color: lightsalmon;
     width: 10rem;
@@ -30,6 +33,7 @@ h3 {
     text-align: center;
     padding-top: 1.5rem;
 }
+
 #fav {
     display: flex;
     justify-content: space-evenly;
