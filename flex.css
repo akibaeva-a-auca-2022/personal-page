@@ -3,35 +3,39 @@
         box-sizing: border-box;
     }
     body {
-    background: url("https://bit.lyL/hw4aidana"); opacity: .5;
+    background: url("https://cdn.imgchest.com/files/j7mmcr5k976.png"); opacity: .5;
     background-repeat: no-repeat;
     }
     .container {
          max-width: 1400px;
+         display: flex;
+         gap: 20px;
+         flex-wrap:wrap;
     }
     .container > * {
          background-color: lightblue;
          font-size: 10rem;
-    color:blue;
+         color:blue;
          border: 2px dashed blue;
-         height: 200px;
-    } 
-    .box1 {
-        flex-basis: 453px;
+         height:201px;
+         flex-grow: 1;
+    }
+ .box1 {
+        flex-basis: 263px;
     }
     .box2{
-        flex-basis: 453px;
+        flex-basis: 549px;
     }
     .box3 {
-        flex-basis: 453px;
+        flex-basis: 428px;
     }
     .box4{
         flex-basis: 1400px;
     }
     .box5 {
-        flex-basis: 1000px;
+        flex-basis: 1080px;
     }
     .box6{
-        flex-basis: 400px;
+        flex-basis: 180px;
     }
     
