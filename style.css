@@ -23,8 +23,11 @@ h1 {
 
 #about {
     display: flex;
+}
+img {
     height: 21.5rem;
 }
+
 
 h3 {
     color: lightsalmon;
