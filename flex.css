@@ -19,15 +19,16 @@
          border: 2px dashed blue;
          height:201px;
          flex-grow: 1;
+       
     }
- .box1 {
-        flex-basis: 263px;
+    .box1 {
+        flex-basis: 264px;
     }
     .box2{
-        flex-basis: 549px;
+        flex-basis: 548px;
     }
     .box3 {
-        flex-basis: 428px;
+        flex-basis: 548px;
     }
     .box4{
         flex-basis: 1400px;
@@ -36,6 +37,5 @@
         flex-basis: 1080px;
     }
     .box6{
-        flex-basis: 180px;
+        flex-basis: 300px;
     }
-    
