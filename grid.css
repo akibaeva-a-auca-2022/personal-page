@@ -13,7 +13,7 @@ body {
 }
 .container > * {
     border: 2px dashed blue;
-    
+
 }
 .box1 {
     grid-area: one;
@@ -51,8 +51,8 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 200px 50px 56px 38px 75px 120px 240px 70px 438px 120px 438px;
-  grid-template-columns: 750px 270px;
+  grid-template-rows: 201px 50px 56px 38px 75px 120px 240px 70px 438px 120px 438px;
+  grid-template-columns: 650px 100px;
   grid-template-areas:
           "one one one"
           "two two two"
