@@ -54,13 +54,13 @@ body {
   grid-template-rows: 201px 50px 56px 38px 75px 120px 240px 70px 438px 120px 438px;
   grid-template-columns: 650px 100px;
   grid-template-areas:
-          "one one one"
-          "two two two"
-          "three three three"
-          "four four four"
-          "five five five"
-          "six six ten"
-          "seven seven ten"
-          "eight eight ten"
-          "nine nine eleven";
+        "one one"
+        "two two"
+        "three three"
+        "four four"
+        "five five"
+        "six ten"
+        "seven ten"
+        "eight ten"
+        "nine eleven";
 }
