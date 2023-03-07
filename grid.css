@@ -52,7 +52,7 @@ body {
 .container {
   display: grid;
   grid-template-rows: 201px 50px 56px 38px 75px 120px 240px 70px 438px;
-  grid-template-columns: 650px 100px;
+  grid-template-columns: 751px 269px;
   grid-template-areas:
         "one one"
         "two two"
