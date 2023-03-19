@@ -78,7 +78,7 @@ ul{
 }
 ul li  {
   color: #fff;
-  font-size: 8px;
+  font-size: 12px;
   height: 58px;
   line-height: 56px;
   padding: 0 10px;
@@ -112,5 +112,5 @@ ul li  {
 }
 .urgently {
   flex-basis: 73px;
-  
+
 }
