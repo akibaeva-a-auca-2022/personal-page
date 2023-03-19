@@ -9,8 +9,7 @@ body {
   min-height: 1300px;
   font-size: 2rem;
   opacity: .5;
-  /*color: blue;*/
-
+  color: blue;
 }
 .container > * {
   border: 2px dashed blue;
