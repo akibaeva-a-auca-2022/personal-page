@@ -114,3 +114,21 @@ ul li  {
   flex-basis: 73px;
 
 }
+@media (max-width: 500px) {
+  .container {
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven"
+        "eight"
+        "nine"
+        "ten"
+        "eleven";
+  }
+}
+  
