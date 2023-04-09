@@ -68,7 +68,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: minmax(201px, auto) minmax(50px, auto) minmax(55px, 70px) minmax(38px, auto) minmax(75px, auto) minmax(120px,auto) minmax(240px, auto) minmax(70px, auto) minmax(440px, auto) ;
+    grid-template-rows: minmax(201px, auto) minmax(50px, auto) minmax(55px, auto) minmax(38px, auto) minmax(75px, auto) minmax(120px,auto) minmax(240px, auto) minmax(70px, auto) minmax(440px, auto) ;
     grid-template-columns: minmax(20px,751px) minmax(20px, 269px);
     grid-template-areas:
         "one one"
@@ -92,7 +92,7 @@ body {
 
 .main-navigation {
     float: right;
-    height: 47px;
+  
    /*margin-right: 20px;*/
 }
 
