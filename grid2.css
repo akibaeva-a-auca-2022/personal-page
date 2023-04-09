@@ -1,121 +1,158 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 * {
-  margin: 0;
-  box-sizing: border-box;
+    margin: 0;
+    box-sizing: border-box;
 }
+
 body {
-  font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
-  background-image: url(https://cdn.imgchest.com/files/345xc9jbw7w.png);
-  background-repeat: no-repeat;
-  max-width: 1020px;
-  min-height: 1300px;
-  font-size: 2rem;
-  opacity: .5;
-  color: blue;
+    background-image: url(https://cdn.imgchest.com/files/345xc9jbw7w.png);
+    background-repeat: no-repeat;
+    max-width: 1020px;
+    min-height: 1300px;
+    font-size: 2rem;
+    opacity: .5;
+    color: blue;
 }
+
 .container > * {
-  border: 2px dashed blue;
+    border: 2px dashed blue;
+
 }
+
 .box1 {
-  grid-area: one;
+    grid-area: one;
 }
+
 .box2 {
-grid-area: two;
+    grid-area: two;
 }
+
 .box3 {
-grid-area: three;
+    grid-area: three;
+    display: flex;
+    gap: 56px;
 }
+
 .box4 {
-grid-area: four;
+    grid-area: four;
 }
+
 .box5 {
-  grid-area: five;
+    grid-area: five;
 }
+
 .box6 {
-  grid-area: six;
+    grid-area: six;
 }
+
 .box7 {
-grid-area: seven;
+    grid-area: seven;
 }
+
 .box8 {
-grid-area: eight;
+    grid-area: eight;
 }
+
 .box9 {
-grid-area: nine;
+    grid-area: nine;
 }
+
 .box10 {
-  grid-area: ten;
+    grid-area: ten;
 }
+
 .box11 {
-  grid-area: eleven;
+    grid-area: eleven;
 }
-/*@media (max-width: 500px) {*/
+
 .container {
-display: grid;
-grid-template-rows: minmax(199px, auto) minmax(50px, auto) minmax(56px, 56px) minmax(38px, auto) minmax(75px, auto) minmax(120px, auto) minmax(240px, auto) minmax(70px, auto) minmax(438px, auto);
-grid-template-columns: minmax(20px,751px) minmax(20px, 269px);
-grid-template-areas:
-      "one one"
-      "two two"
-      "three three"
-      "four four"
-      "five five"
-      "six ten"
-      "seven ten"
-      "eight ten"
-      "nine eleven";
-}
-
-ul{
-  font-weight: normal;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  background-color: red;
-  max-width: 100%;
-  min-height: 100%;
-  align-items: center;
+    display: grid;
+    grid-template-rows: minmax(201px, auto) minmax(50px, auto) minmax(55px, 70px) minmax(38px, auto) minmax(75px, auto) minmax(120px,auto) minmax(240px, auto) minmax(70px, auto) minmax(440px, auto) ;
+    grid-template-columns: minmax(20px,751px) minmax(20px, 269px);
+    grid-template-areas:
+        "one one"
+        "two two"
+        "three three"
+        "four four"
+        "five five"
+        "six ten"
+        "seven ten"
+        "eight ten"
+        "nine eleven";
 
 }
-ul li  {
-  color: #fff;
-  font-size: 14px;
-  height: 56px;
-  line-height: 58px;
-  padding: 0 10px;
-  font-weight: 400;
+
+
+.main-logo {
+    float: left;
+    width: 178px;
+    height: 55px;
 }
-.sale {
-  flex-basis: 45px;
-  margin-left: 234px;
+
+.main-navigation {
+    float: right;
+    height: 47px;
+   /*margin-right: 20px;*/
 }
-.rent {
-  flex-basis: 48px;
+
+ul {
+    font-family: Lato,"Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: red;
+    align-items:center;
+    font-style: normal;
+    font-weight: 400;
+    flex-wrap: wrap;
+    max-width: 100%;
+    min-height: 100%;
+
 }
-.on-the-map {
-  flex-basis: 114px;
+
+
+ul li {
+    color: white;
+    font-size: 14px;
+    /*line-height: 47px;*/
+    padding: 0 10px;
+    display: block;
 }
+/*.sale {*/
+/*  flex-basis: 45px;}*/
+/*.rent {*/
+/*  flex-basis: 48px;*/
+/*}*/
+.map {
+    padding-left: 30px;
+    /*flex-basis: 114px;*/
+
+}
+
 .verification {
-  flex-basis: 162px;
-}
-.daily {
-  flex-basis: 51px;
-}
-.companies {
-  flex-basis: 88px;
-}
-.buildings {
-  flex-basis: 107px;
-}
-.analytics {
-  flex-basis: 76px;
-}
-.urgently {
-  flex-basis: 73px;
+    padding-top: 16px;
+    /*flex-basis: 160px;*/
 
 }
+/*.daily {*/
+/*    flex-basis: 51px;*/
+/*}*/
+/*.companies {*/
+/*    flex-basis: 88px;*/
+/*}*/
+/*.buildings {*/
+/*    flex-basis: 107px;*/
+/*}*/
+/*.analytics {*/
+/*    flex-basis: 76px;*/
+/*}*/
+/*.urgently {*/
+/*flex-basis: 73px;*/
+/*}*/
+
 @media (max-width: 500px) {
   .container {
     grid-template-columns: 100%;
@@ -133,4 +170,3 @@ ul li  {
         "eleven";
   }
 }
-  
