@@ -120,6 +120,7 @@ ul li {
     /*line-height: 47px;*/
     padding: 0 10px;
     display: block;
+    height: 21px;
 }
 /*.sale {*/
 /*  flex-basis: 45px;}*/
@@ -133,7 +134,7 @@ ul li {
 }
 
 .verification {
-    padding-top: 16px;
+    padding-top: 8px;
     /*flex-basis: 160px;*/
 
 }
