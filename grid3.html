@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 8</title>
-    <link rel="stylesheet" href="grid3.css">
+    <title>Assignment 6</title>
+    <link rel="stylesheet" href="grid3.css" class="style">
 </head>
 <body>
     <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
@@ -40,13 +40,13 @@
         <div class="box11">11</div>
     </div>
     <script>
-        function switchStyle() {
-          let style = document.querySelector('.style');
-          if (style.getAttribute('href') == 'grid3.css') {
-            style.setAttribute('href', 'grid2.css');
-          } else {
-            style.setAttribute('href', 'grid3.css');
-          }
+        function switchStyle(){
+            let style = document.querySelector('.style');
+            if (style.getAttribute('href') == 'grid3.css') {
+                style.setAttribute('href', 'grid2.css') ;
+            } else {
+            style.setAttribute('href', 'grid3.css')
+            }
         }
     </script>
 </body>

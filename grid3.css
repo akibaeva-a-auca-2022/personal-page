@@ -34,7 +34,7 @@ body {
     grid-area: three;
     display: flex;
     gap: 56px;
-    /*flex-direction: column;*/
+    flex-direction: column;
 }
 
 .box4 {
@@ -83,6 +83,7 @@ body {
         "seven ten"
         "eight ten"
         "nine eleven";
+
 }
 
 
