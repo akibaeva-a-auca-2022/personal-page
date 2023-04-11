@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body > img:nth-of-type(1) {
+    display: none;
+}
+
+body {
+    background-image: none;
+    background-repeat: no-repeat;
+    max-width: 1020px;
+    min-height: 1300px;
+    font-size: 2rem;
+    color: blue;
+    opacity: 1;
+}
+
+.container > * {
+    border: 2px dashed blue;
+
+}
+
+.box1 {
+    grid-area: one;
+}
+
+.box2 {
+    grid-area: two;
+}
+
+.box3 {
+    grid-area: three;
+}
+
+.box4 {
+    grid-area: four;
+}
+
+.box5 {
+    grid-area: five;
+}
+
+.box6 {
+    grid-area: six;
+}
+
+.box7 {
+    grid-area: seven;
+}
+
+.box8 {
+    grid-area: eight;
+}
+
+.box9 {
+    grid-area: nine;
+}
+
+.box10 {
+    grid-area: ten;
+}
+
+.box11 {
+    grid-area: eleven;
+}
+
+.box12 {
+    grid-area: twelve;
+    margin-top: 15px;
+    height: 55px;
+    width: 178px;
+    display: block;
+    font-family: Lato, "Helvetica Neue", Arial, sans-serif;
+    background: no-repeat 20px 14px;
+    margin-left: 30px;
+    color: white;
+    max-width:159px;
+    background-color: #7fceff;
+}
+
+.box13 {
+    grid-area: thirteen;
+    background-image: url("https://img.staticmb.com/mbcontent//images/uploads/2022/12/Most-Beautiful-House-in-the-World.jpg");
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: minmax(50px, auto) minmax(30px, auto) minmax(53px, auto) minmax(500px, auto) minmax(197px, auto)  minmax(70px, auto)  minmax(420px, auto)  minmax(100px, auto)  minmax(200px, auto)  minmax(190px, auto);
+    grid-template-columns: minmax(20px, 375px) minmax(20px, 980px);
+    grid-template-areas:
+       "two two"
+       "twelve four"
+       "twelve five"
+       "three thirteen"
+       "ten seven"
+       "ten eight"
+       "ten nine"
+       "eleven nine"
+       "eleven six"
+       "one one";
+}
+
+
+.box13 {
+    background-image: url("https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/advisor/wp-content/uploads/2021/08/download-11.jpg");
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-blend-mode: multiply;
+    background-color: grey;;
+}
+
+.box13 h1 {
+    font-family: Lato, "Helvetica Neue", Arial, sans-serif;
+    /*background-color: #7fceff;*/
+    width: 400px;
+    color: white;
+
+}
+
+ul {
+    font-family: Lato, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /*background-color: red;*/
+    background-color: #7fceff;
+    /*align-items:center;*/
+    font-style: normal;
+    font-weight: 400;
+    flex-wrap: wrap;
+    max-width: 100%;
+    min-height: 100%;
+    flex-direction: column;
+}
+
+
+ul li {
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "twelve"
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven"
+        "eight"
+        "nine"
+        "ten"
+        "eleven"
+        "thirteen";
+    }
+}

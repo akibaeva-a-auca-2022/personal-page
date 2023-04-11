@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
-
 * {
     margin: 0;
     box-sizing: border-box;
@@ -65,14 +64,23 @@ body {
 .box11 {
     grid-area: eleven;
 }
- .box12 {
-     grid-area: twelve;
- }
+
+.box12 {
+    grid-area: twelve;
+      margin-top: 6px;
+    margin-left: 14px;
+    /*height: 55px;*/
+    width: 178px;
+    display: block;
+    color: white;
+    background-color: red;
+
+}
 
 .container {
     display: grid;
-    grid-template-rows: minmax(201px, auto) minmax(50px, auto) minmax(53px, auto) minmax(40px, auto) minmax(75px, auto) minmax(120px,auto) minmax(240px, auto) minmax(70px, auto) minmax(440px, auto) ;
-    grid-template-columns:minmax(20px, 200px) minmax(20px,561px) minmax(20px, 269px);
+    grid-template-rows: minmax(201px, auto) minmax(50px, auto) minmax(53px, auto) minmax(40px, auto) minmax(75px, auto) minmax(120px, auto) minmax(240px, auto) minmax(70px, auto) minmax(440px, auto);
+    grid-template-columns:minmax(20px, 200px) minmax(20px, 561px) minmax(20px, 269px);
     grid-template-areas:
         "one one one"
         "two two two"
@@ -86,14 +94,22 @@ body {
 
 }
 
+
+/*.main-logo {*/
+/*    float: left;*/
+/*    width: 178px;*/
+/*    height: 55px;*/
+/*}*/
+
+
 ul {
-    font-family: Lato,"Helvetica Neue", Arial, sans-serif;
+    font-family: Lato, "Helvetica Neue", Arial, sans-serif;
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
     background-color: red;
-    align-items:center;
+    align-items: center;
     font-style: normal;
     font-weight: 400;
     flex-wrap: wrap;
@@ -103,7 +119,7 @@ ul {
 }
 
 
-ul li{
+ul li {
     color: white;
     font-size: 14px;
     padding: 0 10px;
@@ -111,24 +127,31 @@ ul li{
     margin-top: 15px;
 }
 
+/*.sale {*/
+/*  flex-basis: 45px;}*/
+/*.rent {*/
+/*  flex-basis: 48px;*/
+/*}*/
 .sale {
     margin-left: 34px;
 }
+
 .map {
     padding-left: 30px;
 }
+
 li:nth-child(5), li:nth-child(9) {
- padding-left: 7px;   
-}
-.daily {
-padding-left: 7px;
+    padding-left: 7px;
 }
 
+.daily {
+    padding-left: 7px;
+}
 
 @media (max-width: 500px) {
-  .container {
-    grid-template-columns: 100%;
-    grid-template-areas:
+    .container {
+        grid-template-columns: 100%;
+        grid-template-areas:
         "one"
         "two"
         "three"
@@ -140,5 +163,5 @@ padding-left: 7px;
         "nine"
         "ten"
         "eleven";
-  }
+    }
 }

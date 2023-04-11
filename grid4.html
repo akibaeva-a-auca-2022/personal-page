@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <link rel="stylesheet" href="grid4.css" class="style">
+</head>
+<body>
+    <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
+ <img src='https://cdn.imgchest.com/files/pyvdcdqz5yk.png' style='position: absolute; top:0; left:0;z-index:-1' alt="second background">
+
+    <div class="container">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">
+            <div class="main-navigation">
+                <ul>
+                    <li class="sale">Sale</li>
+                    <li class="rent">Rent</li>
+                    <li class="map">On the map</li>
+                    <li class="verification">Real Estate Verification</li>
+                    <li class="daily">Daily</li>
+                    <li class="companies">Companies</li>
+                    <li class="buildings">New buildings</li>
+                    <li class="analytics">Analytics</li>
+                    <li class="urgently">Urgently</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+        <div class="box6">6</div>
+        <div class="box7">7</div>
+        <div class="box8">8</div>
+        <div class="box9">9</div>
+        <div class="box10">10</div>
+        <div class="box11">11</div>
+        <div class="box12">
+            <img src="https://img.icons8.com/material-outlined/2x/home--v3.gif" alt="house.kg">
+            <span class="hidden-font">house.kg</span>
+        </div>
+        <div class="box13">
+            <h1>It is good to HAVE home</h1>
+        </div>
+    </div>
+    <script>
+        function switchStyle(){
+            let style = document.querySelector('.style');
+            if (style.getAttribute('href') == 'grid4.css') {
+                style.setAttribute('href', 'grid2.css') ;
+            } else {
+            style.setAttribute('href', 'grid4.css')
+            }
+        }
+    </script>
+</body>
+</html>
