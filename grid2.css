@@ -86,15 +86,6 @@ body {
 
 }
 
-
-/*.main-logo {*/
-/*    float: left;*/
-/*    width: 178px;*/
-/*    height: 55px;*/
-/*}*/
-
-
-
 ul {
     font-family: Lato,"Helvetica Neue", Arial, sans-serif;
     list-style-type: none;
@@ -120,41 +111,12 @@ ul li{
     margin-top: 15px;
 }
 
-/*.sale {*/
-/*  flex-basis: 45px;}*/
-/*.rent {*/
-/*  flex-basis: 48px;*/
-/*}*/
 .sale {
     margin-left: 34px;
 }
 .map {
     padding-left: 30px;
-    /*flex-basis: 114px;*/
-
 }
-
-.verification {
-
-    /*padding-top: 8px;*/
-    /*flex-basis: 160px;*/
-}
-/*.daily {*/
-/*    flex-basis: 51px;*/
-/*}*/
-/*.companies {*/
-/*    flex-basis: 88px;*/
-/*}*/
-/*.buildings {*/
-/*    flex-basis: 107px;*/
-/*}*/
-/*.analytics {*/
-/*    flex-basis: 76px;*/
-/*}*/
-/*.urgently {*/
-/*flex-basis: 73px;*/
-/*}*/
-
 .daily {
 padding-left: 7px;
 }
