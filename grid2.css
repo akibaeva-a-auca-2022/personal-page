@@ -31,7 +31,7 @@ body {
 
 .box3 {
     grid-area: three;
-
+    background-color: red;
 }
 
 .box4 {
