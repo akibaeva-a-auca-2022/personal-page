@@ -33,8 +33,8 @@ body {
 .box3 {
     grid-area: three;
     display: flex;
-    gap: 56px;
     flex-direction: column;
+
 }
 
 .box4 {
@@ -68,36 +68,42 @@ body {
 .box11 {
     grid-area: eleven;
 }
+.box12 {
+    grid-area: twelve;
+}
 
 .container {
     display: grid;
     grid-template-rows: minmax(201px, auto) minmax(50px, auto) minmax(55px, 70px) minmax(38px, auto) minmax(75px, auto) minmax(120px,auto) minmax(240px, auto) minmax(70px, auto) minmax(440px, auto) ;
-    grid-template-columns: minmax(20px,751px) minmax(20px, 269px);
+    grid-template-columns: minmax(20px, 200px) minmax(20px,561px) minmax(20px, 269px);
     grid-template-areas:
-        "three three"
-        "two two"
-        "one one"
-        "four four"
-        "five five"
-        "six ten"
-        "seven ten"
-        "eight ten"
-        "nine eleven";
+        /*    "three three"*/
+        /*"two two"*/
+        /*"one one"*/
+        /*"four four"*/
+        /*"five five"*/
+        /*"six ten"*/
+        /*"seven ten"*/
+        /*"eight ten"*/
+        /*"nine eleven";*/
+        "twelve one one"
+        "three three three"
+        "two two two"
+        "four four four"
+        "five five five"
+        "six six ten"
+        "seven seven ten"
+        "eight eight ten"
+        "nine nine eleven"
 
 }
 
 
-.main-logo {
-    float: left;
-    width: 178px;
-    height: 55px;
-}
 
-.main-navigation {
-    float: right;
+
 
    /*margin-right: 20px;*/
-}
+
 
 ul {
     font-family: Lato,"Helvetica Neue", Arial, sans-serif;

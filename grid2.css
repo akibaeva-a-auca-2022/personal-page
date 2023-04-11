@@ -30,8 +30,7 @@ body {
 
 .box3 {
     grid-area: three;
-    display: flex;
-    gap: 56px;
+
 }
 
 .box4 {
@@ -65,45 +64,43 @@ body {
 .box11 {
     grid-area: eleven;
 }
+ .box12 {
+     grid-area: twelve;
+ }
 
 .container {
     display: grid;
-    grid-template-rows: minmax(201px, auto) minmax(50px, auto) minmax(55px, auto) minmax(38px, auto) minmax(75px, auto) minmax(120px,auto) minmax(240px, auto) minmax(70px, auto) minmax(440px, auto) ;
-    grid-template-columns: minmax(20px,751px) minmax(20px, 269px);
+    grid-template-rows: minmax(201px, auto) minmax(50px, auto) minmax(53px, auto) minmax(40px, auto) minmax(75px, auto) minmax(120px,auto) minmax(240px, auto) minmax(70px, auto) minmax(440px, auto) ;
+    grid-template-columns:minmax(20px, 200px) minmax(20px,561px) minmax(20px, 269px);
     grid-template-areas:
-        "one one"
-        "two two"
-        "three three"
-        "four four"
-        "five five"
-        "six ten"
-        "seven ten"
-        "eight ten"
-        "nine eleven";
+        "one one one"
+        "two two two"
+        "twelve three three"
+        "four four four"
+        "five five five"
+        "six six ten"
+        "seven seven ten"
+        "eight eight ten"
+        "nine nine eleven";
 
 }
 
 
-.main-logo {
-    float: left;
-    width: 178px;
-    height: 55px;
-}
+/*.main-logo {*/
+/*    float: left;*/
+/*    width: 178px;*/
+/*    height: 55px;*/
+/*}*/
 
-.main-navigation {
-    float: right;
-  
-   /*margin-right: 20px;*/
-}
+
 
 ul {
     font-family: Lato,"Helvetica Neue", Arial, sans-serif;
-    font-size: 14px;
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
-    background-color: red;
+    /*background-color: red;*/
     align-items:center;
     font-style: normal;
     font-weight: 400;
@@ -114,19 +111,22 @@ ul {
 }
 
 
-ul li {
+ul li{
     color: white;
     font-size: 14px;
-    /*line-height: 47px;*/
     padding: 0 10px;
     display: block;
-    height: 21px;
+    margin-top: 15px;
 }
+
 /*.sale {*/
 /*  flex-basis: 45px;}*/
 /*.rent {*/
 /*  flex-basis: 48px;*/
 /*}*/
+.sale {
+    margin-left: 34px;
+}
 .map {
     padding-left: 30px;
     /*flex-basis: 114px;*/
@@ -134,7 +134,8 @@ ul li {
 }
 
 .verification {
-    padding-top: 8px;
+
+    /*padding-top: 8px;*/
     /*flex-basis: 160px;*/
 
 }
