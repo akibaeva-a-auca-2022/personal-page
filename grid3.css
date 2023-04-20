@@ -34,7 +34,6 @@ body {
     grid-area: three;
     display: flex;
     flex-direction: column;
-
 }
 
 .box4 {
@@ -74,18 +73,9 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: minmax(201px, auto) minmax(50px, auto) minmax(55px, 70px) minmax(38px, auto) minmax(75px, auto) minmax(120px,auto) minmax(240px, auto) minmax(70px, auto) minmax(440px, auto) ;
+    grid-template-rows: minmax(201px, auto) minmax(50px, auto) minmax(55px, auto) minmax(38px, auto) minmax(75px, auto) minmax(120px,auto) minmax(240px, auto) minmax(70px, auto) minmax(440px, auto) ;
     grid-template-columns: minmax(20px, 200px) minmax(20px,561px) minmax(20px, 269px);
     grid-template-areas:
-        /*    "three three"*/
-        /*"two two"*/
-        /*"one one"*/
-        /*"four four"*/
-        /*"five five"*/
-        /*"six ten"*/
-        /*"seven ten"*/
-        /*"eight ten"*/
-        /*"nine eleven";*/
         "twelve one one"
         "three three three"
         "two two two"
@@ -95,15 +85,7 @@ body {
         "seven seven ten"
         "eight eight ten"
         "nine nine eleven"
-
 }
-
-
-
-
-
-   /*margin-right: 20px;*/
-
 
 ul {
     font-family: Lato,"Helvetica Neue", Arial, sans-serif;
@@ -130,37 +112,6 @@ ul li {
     padding: 10px;
     border-bottom: 1px solid white;
 }
-/*.sale {*/
-/*  flex-basis: 45px;}*/
-/*.rent {*/
-/*  flex-basis: 48px;*/
-/*}*/
-/*.map {*/
-/*    padding-left: 30px;*/
-/*    !*flex-basis: 114px;*!*/
-
-/*}*/
-
-/*.verification {*/
-/*    padding-top: 8px;*/
-    /*flex-basis: 160px;*/
-
- /*}*/
-/*.daily {*/
-/*    flex-basis: 51px;*/
-/*}*/
-/*.companies {*/
-/*    flex-basis: 88px;*/
-/*}*/
-/*.buildings {*/
-/*    flex-basis: 107px;*/
-/*}*/
-/*.analytics {*/
-/*    flex-basis: 76px;*/
-/*}*/
-/*.urgently {*/
-/*flex-basis: 73px;*/
-/*}*/
 
 @media (max-width: 500px) {
   .container {
