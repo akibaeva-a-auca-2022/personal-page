@@ -154,6 +154,7 @@ li:nth-child(5), li:nth-child(9) {
         grid-template-areas:
         "one"
         "two"
+        "twelve"
         "three"
         "four"
         "five"
