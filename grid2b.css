@@ -95,19 +95,14 @@ body {
 }
 
 
-/*.main-logo {*/
-/*    float: left;*/
-/*    width: 178px;*/
-/*    height: 55px;*/
-/*}*/
-
-
 ul {
     font-family: Lato, "Helvetica Neue", Arial, sans-serif;
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
+    background-color: red;
+    align-items: center;
     font-style: normal;
     font-weight: 400;
     flex-wrap: wrap;
@@ -130,15 +125,11 @@ ul li {
 }
 
 .map {
-    padding-left: 32px;
-}
-.verification {
-    margin-top: 23px;
-
+    padding-left: 30px;
 }
 
 li:nth-child(5), li:nth-child(9) {
-    padding-left: 8px;
+    padding-left: 7px;
 }
 
 .daily {

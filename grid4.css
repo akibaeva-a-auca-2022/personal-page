@@ -125,6 +125,8 @@ body {
 
 }
 
+
+
 ul {
     font-family: Lato, "Helvetica Neue", Arial, sans-serif;
     font-size: 14px;
@@ -158,10 +160,9 @@ ul li {
         grid-template-columns: 100%;
         grid-template-areas:
         "twelve"
+        "three"
         "one"
         "two"
-        "twelve"
-        "three"
         "four"
         "five"
         "six"
