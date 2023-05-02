@@ -68,20 +68,20 @@ body {
     grid-area: eleven;
 }
 
+
 .box12 {
     grid-area: twelve;
-    margin-top: 15px;
-    height: 55px;
-    width: 178px;
+    padding-top: 26px;
+    padding-left: 14px;
     display: block;
-    font-family: Lato, "Helvetica Neue", Arial, sans-serif;
-    background: no-repeat 20px 14px;
-    margin-left: 30px;
     color: white;
-    max-width:159px;
     background-color: #7fceff;
 }
-
+ .logo {
+     width: 135px;
+     /*margin-top: 5px;*/
+     /*margin-left: 4px;*/
+ }
 .box13 {
     grid-area: thirteen;
     background-image: url("https://img.staticmb.com/mbcontent//images/uploads/2022/12/Most-Beautiful-House-in-the-World.jpg");
@@ -124,8 +124,6 @@ body {
     color: white;
 
 }
-
-
 
 ul {
     font-family: Lato, "Helvetica Neue", Arial, sans-serif;
@@ -174,3 +172,4 @@ ul li {
         "thirteen";
     }
 }
+

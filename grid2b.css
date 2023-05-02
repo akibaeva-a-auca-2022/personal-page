@@ -67,14 +67,20 @@ body {
 
 .box12 {
     grid-area: twelve;
-      margin-top: 6px;
+    margin-top: 6px;
     margin-left: 14px;
-    /*height: 55px;*/
-    width: 178px;
     display: block;
     color: white;
-    background-color: red;
-
+    width: 178px;
+    /*background-color: red;*/
+}
+ .logo {
+     width: 135px;
+     margin-top: 5px;
+     margin-left: 4px;
+ }
+.box13 {
+    display: none;
 }
 
 .container {
@@ -90,28 +96,26 @@ body {
         "six six ten"
         "seven seven ten"
         "eight eight ten"
-        "nine nine eleven";
+        "nine nine eleven"
+       ;
 
 }
 
 
-ul {
+.main-navigation-list {
     font-family: Lato, "Helvetica Neue", Arial, sans-serif;
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
-    background-color: red;
-    align-items: center;
     font-style: normal;
     font-weight: 400;
     flex-wrap: wrap;
     max-width: 100%;
     min-height: 100%;
+    /*gap: 10px;*/
 
 }
-
-
 ul li {
     color: white;
     font-size: 14px;
@@ -125,11 +129,13 @@ ul li {
 }
 
 .map {
-    padding-left: 30px;
+    padding-left: 32px;
 }
-
+.verification {
+    margin-top: 23px;
+}
 li:nth-child(5), li:nth-child(9) {
-    padding-left: 7px;
+    padding-left: 8px;
 }
 
 .daily {
@@ -152,6 +158,224 @@ li:nth-child(5), li:nth-child(9) {
         "nine"
         "ten"
         "eleven"
-        "twelve";
+        "twelve"
+        ;
     }
+}
+.title {
+    height: 35px;
+    padding: 0 19px;
+    font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    gap: 503px;
+}
+.name {
+    line-height: 26px;
+    font-size: 20px;
+    color: #000;
+    margin-left: 7px;
+}
+.link {
+    line-height: 26px;
+    font-size: 14px;
+}
+a {
+        color: #368ed8;
+}
+
+#add {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    height: 100%;
+    margin-top: 6px;
+    margin-left: 27px;
+    gap: .5rem;
+    flex-wrap: wrap;
+}
+
+#add li {
+    width: 134px;
+    height: 180px;
+    margin: 0;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    color: rgba(0,0,0,.4);
+    padding: 0;
+
+    /*gap: 5px;*/
+
+}
+
+.image {
+    height: 123px;
+    background-size: cover;
+    background-position: center;
+     border-radius: 5px 5px 0 0;
+}
+.add-item1 {
+    margin-left: 37px;
+}
+.add-item1 .image {
+    background-image: url("https://unsplash.it/300/200?1");
+}
+.add-item2 .image {
+    background-image: url("https://unsplash.it/300/200?2");
+}
+.add-item3 .image {
+    background-image: url("https://unsplash.it/300/200?3");
+}
+.add-item4 .image {
+    background-image: url("https://unsplash.it/300/200?4");
+}
+.add-item5 .image{
+    background-image: url("https://unsplash.it/300/200?5");
+}
+
+.account-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    padding: 7px 5px 6px;
+}
+.account-content .corporation {
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+ .add-item1 .corporation {
+     margin-left: 9px;
+ }
+ .add-item2 .corporation {
+     margin-left: 3px;
+ }
+ .add-item3 .corporation {
+     margin-left: -4px;
+ }
+ .add-item4 .corporation {
+     margin-left: -10px;
+ }
+ .add-item5 .corporation {
+     margin-left: -17px;
+ }
+ .count-of-adds {
+     font-size: 11px;
+     line-height: 14px;
+     margin-top: 16px;
+ }
+ .add-item1 .count-of-adds {
+     margin-left: 8px;
+ }
+ .add-item3 .count-of-adds {
+     margin-left: -4px;
+ }
+ .add-item4 .count-of-adds {
+     margin-left: -11px;
+ }
+ .add-item5 .count-of-adds {
+     margin-left: -17px;
+ }
+
+ .category-block-sell .title {
+     gap: 451px;
+     margin-top: 15px;
+     font-family: Pt Sans, Helvetica, serif;
+ }
+ .category-block-sell .title .name {
+     font-size: 20px;
+ }
+
+.category-block-sell .title .link {
+    font-size: 14px;
+    margin-top: 2px;
+
+ }
+.category-block-content-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    height: 100%;
+    margin-top: 6px;
+    margin-left: 19px;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+.category-block-content-list-item {
+     width: 221px;
+    height: 173px;
+    margin: 0;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    color: rgba(0,0,0,.4);
+    padding: 0;
+}
+
+.category-block-content-list li:nth-child(1) .image {
+    background-image: url("https://unsplash.it/300/200?6");
+    height: 100%;
+}
+.category-block-content-list li:nth-child(2) .image {
+    background-image: url("https://unsplash.it/300/200?7");
+     height: 100%;
+}
+.category-block-content-list li:nth-child(3) .image {
+    background-image: url("https://unsplash.it/300/200?8");
+     height: 100%;
+}
+.category-block-content-list li:nth-child(4) .image {
+    background-image: url("https://unsplash.it/300/200?9");
+     height: 100%;
+}
+.category-block-content-list li:nth-child(5) .image {
+    background-image: url("https://unsplash.it/300/200?10");
+     height: 100%;
+}
+.category-block-content-list li:nth-child(6) .image {
+    background-image: url("https://unsplash.it/300/200?11");
+     height: 100%;
+}
+.category-block-content-list-item {
+    color: white;
+     font-family: Lato, "Helvetica Neue", Arial, sans-serif;
+
+
+}
+.price-overall {
+    display: flex;
+    gap: 15px;
+    /*color: white;*/
+}
+.price-\$ {
+    font-size: 20px;
+     font-style: normal;
+    font-weight: 700;
+}
+.price-S {
+    margin-top: 6px;
+}
+.location {
+    font-size: 17px;
+}
+
+.extra-info {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.description {
+    font-weight: 700;
+    font-size: 17px;
 }
