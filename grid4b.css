@@ -5,14 +5,18 @@
     box-sizing: border-box;
 }
 
+body > img:nth-of-type(1) {
+    display: none;
+}
+
 body {
-    background-image: url(https://cdn.imgchest.com/files/345xc9jbw7w.png);
+    background-image: none;
     background-repeat: no-repeat;
     max-width: 1020px;
     min-height: 1300px;
     font-size: 2rem;
-    opacity: .5;
     color: blue;
+    opacity: 1;
 }
 
 .container > * {
@@ -30,7 +34,6 @@ body {
 
 .box3 {
     grid-area: three;
-    background-color: red;
 }
 
 .box4 {
@@ -65,100 +68,127 @@ body {
     grid-area: eleven;
 }
 
+
 .box12 {
     grid-area: twelve;
-    margin-top: 6px;
-    margin-left: 14px;
+    /*padding-top: 26px;*/
+    /*padding-left: 14px;*/
     display: block;
     color: white;
-    width: 178px;
-    /*background-color: red;*/
+    background-color: red;
 }
 
 .logo {
     width: 135px;
-    margin-top: 5px;
-    margin-left: 4px;
+    /*margin-top: 5px;*/
+    /*margin-left: 4px;*/
 }
 
 .box13 {
-    display: none;
+    grid-area: thirteen;
+    background-image: url("https://img.staticmb.com/mbcontent//images/uploads/2022/12/Most-Beautiful-House-in-the-World.jpg");
+    background-repeat: no-repeat;
+    opacity: 1;
 }
 
 .container {
     display: grid;
-    grid-template-rows: minmax(201px, auto) minmax(50px, auto) minmax(53px, auto) minmax(40px, auto) minmax(75px, auto) minmax(120px, auto) minmax(240px, auto) minmax(70px, auto) minmax(440px, auto);
-    grid-template-columns:minmax(20px, 200px) minmax(20px, 561px) minmax(20px, 269px);
+    grid-template-rows: minmax(50px, auto) minmax(30px, auto) minmax(53px, auto) minmax(500px, auto) minmax(197px, auto)  minmax(70px, auto)  minmax(420px, auto)  minmax(100px, auto)  minmax(200px, auto)  minmax(190px, auto);
+    grid-template-columns: minmax(20px, 375px) minmax(20px, 980px);
     grid-template-areas:
-        "one one one"
-        "two two two"
-        "twelve three three"
-        "four four four"
-        "five five five"
-        "six six ten"
-        "seven seven ten"
-        "eight eight ten"
-        "nine nine eleven";
-
+       "two two"
+       "twelve four"
+       "twelve five"
+       "three thirteen"
+       "ten seven"
+       "ten eight"
+       "ten nine"
+       "eleven nine"
+       "eleven six"
+       "one one";
 }
 
 
+.box13 {
+    background-image: url("https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/advisor/wp-content/uploads/2021/08/download-11.jpg");
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-blend-mode: multiply;
+    background-color: grey;;
+}
+
+.box13 h1 {
+    font-family: Lato, "Helvetica Neue", Arial, sans-serif;
+    /*background-color: #7fceff;*/
+    width: 400px;
+    color: white;
+
+}
+
 .main-navigation-list {
     font-family: Lato, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
+    /*background-color: red;*/
+    background-color: red;
+    /*align-items:center;*/
     font-style: normal;
     font-weight: 400;
     flex-wrap: wrap;
     max-width: 100%;
     min-height: 100%;
-    /*gap: 10px;*/
+    flex-direction: column;
 
 }
+
 
 ul li {
+    text-transform: uppercase;
     color: white;
     font-size: 14px;
-    padding: 0 10px;
-    display: block;
-    margin-top: 15px;
-}
-
-.sale {
-    margin-left: 34px;
-}
-
-.map {
-    padding-left: 32px;
-}
-
-.verification {
-    margin-top: 23px;
-}
-
-li:nth-child(5), li:nth-child(9) {
-    padding-left: 8px;
-}
-
-.daily {
-    padding-left: 7px;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .buttonMenu {
     display: none;
 }
 
+
 @media (max-width: 500px) {
+    .buttonMenu {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 0;
+    }
+
+    .box3 {
+        display: none;
+    }
+
+    .box3.buttonMenu {
+        display: block;
+        position: fixed;
+        top: 50px;
+        right: 0;
+    }
+
+
     .container {
         grid-template-columns: 100%;
         grid-template-areas:
-
+        "twelve"
+        "thirteen"
         "one"
         "two"
-        "twelve"
-        "three"
         "four"
         "five"
         "six"
@@ -166,32 +196,43 @@ li:nth-child(5), li:nth-child(9) {
         "eight"
         "nine"
         "ten"
-        "eleven"
-        "twelve";
+        "eleven";
+
     }
 }
 
 .title {
     height: 35px;
     padding: 0 19px;
-    font-family: Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: Lato, "Helvetica Neue", Arial, sans-serif;
     font-style: normal;
     font-weight: 700;
     display: flex;
     flex-direction: row;
-    gap: 503px;
+    gap: 410px;
+    background-color: red;
+}
+
+.box7 .title {
+    margin-top: 7px;
 }
 
 .name {
     line-height: 26px;
     font-size: 20px;
-    color: #000;
+    color: #ffffff;
     margin-left: 7px;
+
 }
 
 .link {
     line-height: 26px;
     font-size: 14px;
+}
+
+.title .link a {
+    padding-top: 7px;
+    color: white;
 }
 
 a {
@@ -215,29 +256,40 @@ a {
     height: 180px;
     margin: 0;
     border-radius: 16px;
-    background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     color: rgba(0, 0, 0, .4);
     padding: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
-
     /*gap: 5px;*/
-
 }
 
-.image {
-    width: 138px;
-    height: 123px;
-
-    border-radius: 5px 5px 0 0;
+.add-item {
+    display: grid;
 }
+
+.add-item > * {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .image img {
-    width: 138px;
-    height: 123px;
-    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    z-index: -1;
+    filter: brightness(50%);
 }
 
+
+
+li:nth-child(5) .image  {
+    height: 177px;
+}
 
 .account-content {
     display: flex;
@@ -249,7 +301,9 @@ a {
     text-align: center;
     padding: 7px 5px 6px;
 }
-
+.corporation {
+    color: white;
+}
 .account-content .corporation {
     font-size: 12px;
     line-height: 13px;
@@ -259,20 +313,25 @@ a {
 }
 
 li:nth-child(1) .corporation {
-     margin-left: 9px;
- }
+    margin-left: 9px;
+}
+
 li:nth-child(2) .corporation {
-     margin-left: 3px;
- }
+    margin-left: 3px;
+}
+
 li:nth-child(3) .corporation {
     margin-left: -4px;
 }
+
 li:nth-child(4) .corporation {
-     margin-left: -10px;
- }
+    margin-left: -10px;
+}
+
 li:nth-child(5) .corporation {
-     margin-left: -17px;
- }
+    margin-left: -17px;
+}
+
 .count-of-adds {
     font-size: 11px;
     line-height: 14px;
@@ -296,8 +355,8 @@ li:nth-child(5) .count-of-adds {
 }
 
 .category-block-sell .title {
-    gap: 451px;
-    margin-top: 15px;
+    gap: 359px;
+    margin-top: 10px;
     font-family: Pt Sans, Helvetica, serif;
 }
 
@@ -310,6 +369,7 @@ li:nth-child(5) .count-of-adds {
     margin-top: 2px;
 
 }
+
 
 .category-block-content-list {
     display: flex;
@@ -328,9 +388,11 @@ li:nth-child(5) .count-of-adds {
     height: 173px;
     margin: 0;
     border-radius: 3px;
+    /*background: #fff;*/
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     color: rgba(0, 0, 0, .4);
     padding: 0;
+    color: white;
     font-family: Lato, "Helvetica Neue", Arial, sans-serif;
 
 }
@@ -348,7 +410,7 @@ li:nth-child(5) .count-of-adds {
     color: white;
 
     display: flex;
-
+    align-items: center;
     justify-content: center;
 }
 
@@ -356,10 +418,9 @@ li:nth-child(5) .count-of-adds {
     filter: brightness(50%);
     z-index: -1;
     height: 173px;
-    width: 221px;
+    width: 296px;
     border-radius: 3px;
 }
-
 
 .price-overall {
     display: flex;
@@ -385,10 +446,21 @@ li:nth-child(5) .count-of-adds {
     display: flex;
     flex-direction: column;
     gap: 80px;
-    margin-top: 20px;
 }
 
 .description {
     font-weight: 700;
     font-size: 17px;
+}
+
+.buttonMenu {
+    background-color: red;
+    /*display: none;*/
+    border-radius: 17px;
+}
+
+.menu {
+    width: 20px;
+    height: 20px;
+
 }
