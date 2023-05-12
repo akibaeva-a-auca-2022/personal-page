@@ -111,7 +111,7 @@ body {
     flex-wrap: wrap;
     max-width: 100%;
     min-height: 100%;
-    /*gap: 10px;*/
+
 
 }
 
@@ -121,6 +121,7 @@ ul li {
     padding: 0 10px;
     display: block;
     margin-top: 15px;
+    flex-shrink: 1;
 }
 
 .sale {
@@ -221,10 +222,8 @@ a {
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     color: rgba(0, 0, 0, .4);
     padding: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
 
-    /*gap: 5px;*/
+    flex-shrink: 1;
 
 }
 
@@ -387,10 +386,6 @@ li:nth-child(5) .count-of-adds {
     margin-top: 3px;
 }
 
-.extra-info {
-    margin-left: 5px;
-}
-
 .location {
     font-size: 13px;
 }
@@ -400,6 +395,7 @@ li:nth-child(5) .count-of-adds {
     flex-direction: column;
     justify-content: space-between;
     margin-top: 20px;
+    margin-left: 5px;
 }
 
 .description {
