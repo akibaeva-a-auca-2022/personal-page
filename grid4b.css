@@ -159,6 +159,8 @@ ul li {
 
 .buttonMenu {
     display: none;
+    background-color: red;
+    border-radius: 17px;
 }
 
 
@@ -237,6 +239,7 @@ ul li {
 
 a {
     color: #368ed8;
+    text-decoration: none;
 }
 
 #add {
@@ -286,8 +289,7 @@ a {
 }
 
 
-
-li:nth-child(5) .image  {
+li:nth-child(5) .image {
     height: 177px;
 }
 
@@ -301,9 +303,11 @@ li:nth-child(5) .image  {
     text-align: center;
     padding: 7px 5px 6px;
 }
+
 .corporation {
     color: white;
 }
+
 .account-content .corporation {
     font-size: 12px;
     line-height: 13px;
@@ -445,18 +449,13 @@ li:nth-child(5) .count-of-adds {
 .extra-info {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    justify-content: space-between;
+    margin-left: 5px;
 }
 
 .description {
     font-weight: 700;
     font-size: 17px;
-}
-
-.buttonMenu {
-    background-color: red;
-    /*display: none;*/
-    border-radius: 17px;
 }
 
 .menu {

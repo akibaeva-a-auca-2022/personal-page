@@ -67,18 +67,15 @@ body {
 
 .box12 {
     grid-area: twelve;
-    margin-top: 6px;
-    margin-left: 14px;
     display: block;
-    color: white;
-    width: 178px;
-    /*background-color: red;*/
+    background-color: red;
 }
 
 .logo {
     width: 135px;
-    margin-top: 5px;
-    margin-left: 4px;
+    margin-left: 18px;
+    margin-top: 11px;
+
 }
 
 .box13 {
@@ -151,14 +148,15 @@ li:nth-child(5), li:nth-child(9) {
 }
 
 @media (max-width: 500px) {
+
     .container {
         grid-template-columns: 100%;
         grid-template-areas:
 
         "one"
         "two"
-        "twelve"
-        "three"
+         "twelve"
+       "three"
         "four"
         "five"
         "six"
@@ -166,8 +164,7 @@ li:nth-child(5), li:nth-child(9) {
         "eight"
         "nine"
         "ten"
-        "eleven"
-        "twelve";
+        "eleven";
     }
 }
 
@@ -179,7 +176,9 @@ li:nth-child(5), li:nth-child(9) {
     font-weight: 700;
     display: flex;
     flex-direction: row;
-    gap: 503px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 
 .name {
@@ -192,10 +191,13 @@ li:nth-child(5), li:nth-child(9) {
 .link {
     line-height: 26px;
     font-size: 14px;
+    padding-right: 16px;
+
 }
 
 a {
     color: #368ed8;
+    text-decoration: none;
 }
 
 #add {
@@ -232,6 +234,7 @@ a {
 
     border-radius: 5px 5px 0 0;
 }
+
 .image img {
     width: 138px;
     height: 123px;
@@ -259,20 +262,25 @@ a {
 }
 
 li:nth-child(1) .corporation {
-     margin-left: 9px;
- }
+    margin-left: 9px;
+}
+
 li:nth-child(2) .corporation {
-     margin-left: 3px;
- }
+    margin-left: 3px;
+}
+
 li:nth-child(3) .corporation {
     margin-left: -4px;
 }
+
 li:nth-child(4) .corporation {
-     margin-left: -10px;
- }
+    margin-left: -10px;
+}
+
 li:nth-child(5) .corporation {
-     margin-left: -17px;
- }
+    margin-left: -17px;
+}
+
 .count-of-adds {
     font-size: 11px;
     line-height: 14px;
@@ -296,7 +304,6 @@ li:nth-child(5) .count-of-adds {
 }
 
 .category-block-sell .title {
-    gap: 451px;
     margin-top: 15px;
     font-family: Pt Sans, Helvetica, serif;
 }
@@ -349,7 +356,6 @@ li:nth-child(5) .count-of-adds {
 
     display: flex;
 
-    justify-content: center;
 }
 
 .box img {
@@ -362,33 +368,41 @@ li:nth-child(5) .count-of-adds {
 
 
 .price-overall {
+
     display: flex;
     gap: 15px;
+    margin-top: 4px;
+    margin-left: 4px;
     /*color: white;*/
 }
 
 .price-\$ {
-    font-size: 20px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 700;
 }
 
 .price-S {
-    margin-top: 6px;
+    font-size: 10px;
+    margin-top: 3px;
+}
+
+.extra-info {
+    margin-left: 5px;
 }
 
 .location {
-    font-size: 17px;
+    font-size: 13px;
 }
 
 .extra-info {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    justify-content: space-between;
     margin-top: 20px;
 }
 
 .description {
     font-weight: 700;
-    font-size: 17px;
+    font-size: 13px;
 }
