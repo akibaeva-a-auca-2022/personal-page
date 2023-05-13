@@ -174,7 +174,7 @@ ul li {
         display: none;
     }
 
-    .box3.buttonMenu {
+    .box3.mobileMenu {
         display: block;
         position: fixed;
         top: 50px;
