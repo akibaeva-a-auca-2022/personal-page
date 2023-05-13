@@ -397,7 +397,7 @@ li:nth-child(5) .count-of-adds {
 
 
 .box {
-    width: 221px;
+    /* width: 221px; */
     display: grid;
 
 }
@@ -416,7 +416,7 @@ li:nth-child(5) .count-of-adds {
     z-index: -1;
     height: 173px;
     border-radius: 3px;
-    width: 221px;
+    width: 100%;
 }
 
 .price-overall {
