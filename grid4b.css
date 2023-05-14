@@ -202,7 +202,7 @@ ul li {
 }
 
 .title {
-    height: 35px;
+    min-height: 35px;
     padding: 0 19px;
     font-family: Lato, "Helvetica Neue", Arial, sans-serif;
     font-style: normal;
